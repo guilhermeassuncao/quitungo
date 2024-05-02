@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Berlin Sans FB Demi';
+  src: url('../fonts/Berlin Sans FB Demi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Papyrus';
+  src: url('../fonts/Papyrus.ttf') format('truetype');
+}
+
+body {
+  background: url('../img/background/home.png') no-repeat center / cover fixed;
+}
+
+header {
+  margin: 1.5rem;
+}
+
+header img {
+  max-height: 10rem;
+}
+
+ul {
+  font-family: 'Papyrus', cursive;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 3rem 1.5rem 0;
+  list-style: none;
+}
+
+ul li {
+  margin-top: 1.25rem;
+}
+
+ul li::before {
+  content: url('../img/icon/flower.svg');
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  header img {
+    max-height: 5rem;
+  }
+
+  ul {
+    font-size: 1rem;
+  }
+
+  ul li::before {
+    content: url('../img/icon/flower-md.svg');
+  }
+}
