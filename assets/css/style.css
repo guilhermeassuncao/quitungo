@@ -39,6 +39,7 @@ li {
 
 .footer {
     display: flex;
+    align-items: center;
     gap: 2rem;
     background-color: var(--laranra);
     padding: 2rem;
