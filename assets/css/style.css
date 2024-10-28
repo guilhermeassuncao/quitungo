@@ -1,54 +1,99 @@
-@font-face {
-  font-family: 'Berlin Sans FB Demi';
-  src: url('../fonts/Berlin Sans FB Demi.ttf') format('truetype');
+:root {
+    --laranra: #f47e57;
+    --amarelo: #eddb5c;
+    --branco: #f7f7f7;
 }
 
-@font-face {
-  font-family: 'Papyrus';
-  src: url('../fonts/Papyrus.ttf') format('truetype');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
 }
 
-body {
-  background: url('../img/background/home.png') no-repeat center / cover fixed;
+a {
+    color: var(--branco);
+    text-decoration: none;
 }
 
-header {
-  margin: 1.5rem;
+li {
+    list-style: none;
 }
 
-header img {
-  max-height: 10rem;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 48.7rem;
+    gap: 8em;
+    padding: 2rem;
+    background-image: url(../img/background/quitungo.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 }
 
-ul {
-  font-family: 'Papyrus', cursive;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 3rem 1.5rem 0;
-  list-style: none;
+.logo {
+    height: 16rem;
 }
 
-ul li {
-  margin-top: 1.25rem;
+.footer {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--laranra);
+    padding: 2rem;
 }
 
-ul li::before {
-  content: url('../img/icon/flower.svg');
-  margin-right: 1rem;
-  vertical-align: middle;
+.apoio {
+    height: 5rem;
 }
 
-@media only screen and (max-width: 768px) {
-  header img {
-    max-height: 5rem;
-  }
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
 
-  ul {
-    font-size: 1rem;
-  }
+.link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
 
-  ul li::before {
-    content: url('../img/icon/flower-md.svg');
-  }
+@media screen and (max-width: 992px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        height: 40rem;
+    }
+
+    .logo {
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 8rem;
+    }
+
+    .main {
+        height: 30rem;
+    }
+
+    .link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        height: 6rem;
+    }
 }
