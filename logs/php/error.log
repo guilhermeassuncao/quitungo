@@ -1,0 +1,1 @@
+[05-Nov-2024 00:05:03 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\cgmat\OneDrive\Documentos\GitHub\quitungo\app\public\wp-includes\class-wp-customize-widgets.php on line 905
