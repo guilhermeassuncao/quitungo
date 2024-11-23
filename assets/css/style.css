@@ -64,9 +64,8 @@ li {
 
 .footer-sections {
     display: grid;
-    justify-content: center;
     align-self: start;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     width: 100%;
 }
 
@@ -76,15 +75,15 @@ li {
 }
 
 .footer-links:nth-child(1) {
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 
 .footer-links:nth-child(2) {
-    margin-left: 10rem;
+    margin-left: 13rem;
 }
 
 .footer-links:nth-child(3) {
-    margin-left: 13rem;
+    margin-left: 16rem;
 }
 
 .footer-margin-one {
